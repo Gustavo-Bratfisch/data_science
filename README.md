@@ -17,9 +17,8 @@ Experience here
 
 
 ## Projetos:
-Veja os tutoriais publicados do Sigmoidal:
 
-* **Como para Data Science:** 
+* **Projetos de Data Science:** 
 ---
 
 
