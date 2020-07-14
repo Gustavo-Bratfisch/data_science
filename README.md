@@ -17,8 +17,8 @@ Experience here
 
 
 ## Projetos:
-
-* **Projetos de Data Science:** 
+Projetos feitos em em Jupyter Notebook.
+* **Comparação entre dados do Governo de São Paulo x Prefeitura de Indaiatuba:** https://bit.ly/309w5ui
 ---
 
 
