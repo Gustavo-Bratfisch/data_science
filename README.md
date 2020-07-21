@@ -7,7 +7,7 @@
 # Gustavo Gianotto Bratfisch
 <sub>* Center</sub>
 
-Experience here
+Formando em Matemática Aplicada pela Unicamp, trabalhei com modelagem matemática voltado para agropecuaria e agora estou fazendo minha transição de carreira para Cientista de Dados
 
 **Background in:** Python, Machine Learning, R and Mathematical .
 
