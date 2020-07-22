@@ -18,7 +18,7 @@ Formando em Matemática Aplicada pela Unicamp, trabalhei com modelagem matemáti
 
 ## Projetos:
 Projetos feitos em em Jupyter Notebook.
-* **Comparação entre dados do Governo de São Paulo x Prefeitura de Indaiatuba:** https://bit.ly/30yq5vf
+* **Comparação entre dados do Governo de São Paulo x Prefeitura de Indaiatuba:** https://bit.ly/3jvVyXG
 * **Detecção de Fraudes em transações bancárias:** https://bit.ly/2WABvxn
 ---
 
