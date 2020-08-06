@@ -23,6 +23,8 @@ plotando conseguimos notar que jogos MM são que tem o maior feedback tanto posi
 Nessa segunda parte criamos nosso modelo utilziando a metodologia de recomendação baseada em conteúdo onde passamos descrições dos jogos, o modelo computa TF-IDF (Term Frequency-Inverse Document Frequency) 
 que calcula uma matrix onde na coluna representa a uma avaliação da frequencia da palavra aparecer. Com essa matrix utilizamos uma metrica de similaridade (no nosso caso foi sigmoid_kernel) e por fim ordenamos pelo score feito anteriormente para ver os 10 jogos mais semelhantes. 
 
+Para finalizar cronstruímos um local web usando Flask, inicalmente voce sente uma diferença por precisar criar um template para que os resultados apareçam, necessitando um conhecimento basico de html (não é muito dificil aprender).
+
 
 ![final_app](https://user-images.githubusercontent.com/11478711/89566880-2ff99080-d7f7-11ea-928e-c60843044940.png)
 ## Deployment
