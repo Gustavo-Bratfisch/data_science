@@ -7,7 +7,7 @@ depois utilizaremos Flask para criar uma aplicação local para recomendação d
 
 Podemos dividir esse trabalho em duas partes.
 
-### - Primeira Parte: Visualização dos dados: **https://bit.ly/30wq5xg**
+### - Primeira Parte: Visualização dos dados: **https://bit.ly/31r7Gkv**
 
 Nessa parte tentamos entender um pouco mais de como os dados estão distribuidos, fizemos alguns agrupamentos para ver quais são os generos majoritarios(grafico abaixo) e o tipo de jogo
 ![genre_game](https://user-images.githubusercontent.com/11478711/89574241-35100d00-d802-11ea-84d4-8226507566c1.png)
