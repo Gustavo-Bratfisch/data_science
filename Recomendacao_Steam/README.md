@@ -3,7 +3,7 @@
 Nesse projeto iremos fazer uma análise exploratorio dos dados mostrando um pouco mais sobre os dados e 
 depois utilizaremos Flask para criar uma aplicação local para recomendação de jogos na steam (jogos com lançamento até maio de 2019).
 
-## Getting Started
+## Inicio
 
 Podemos dividir esse trabalho em duas partes.
 
@@ -27,16 +27,4 @@ que calcula uma matrix onde na coluna representa a uma avaliação da frequencia
 ![final_app](https://user-images.githubusercontent.com/11478711/89566880-2ff99080-d7f7-11ea-928e-c60843044940.png)
 ## Deployment
 
-O próximo passo é implementar um Deploy em algum servidor para deixar publico nosso sistema de recomendação de jogos.
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+O próximo passo é implementar um Deploy em algum servidor para deixar publico nosso sistema de recomendação de jogos. Estou em duvida entre utilziar Heroku ou Apache.
