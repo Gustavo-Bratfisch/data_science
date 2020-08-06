@@ -10,12 +10,13 @@ Podemos dividir esse trabalho em duas partes.
 ### - Primeira Parte: Visualização dos dados: **https://bit.ly/30wq5xg**
 
 Nessa parte tentamos entender um pouco mais de como os dados estão distribuidos, fizemos alguns agrupamentos para ver quais são os generos majoritarios(grafico abaixo) e o tipo de jogo
-![genre_game](https://user-images.githubusercontent.com/11478711/89564938-26baf480-d7f4-11ea-80f0-3a6cba7b6d2a.png)
+![genre_game](https://user-images.githubusercontent.com/11478711/89574241-35100d00-d802-11ea-84d4-8226507566c1.png)
 
 Criamos uma medida de avaliação baseada nas taxas de avaliações positivas e negativas dos jogos e fazendo um simples agrupamento conseguimos notar alguns pontos interessant e 
 plotando conseguimos notar que jogos MM são que tem o maior feedback tanto positivo quanto negativo e nos restante seguem o mesmo padrão
 
-![ratin_gem](https://user-images.githubusercontent.com/11478711/89564387-54ec0480-d7f3-11ea-8129-9afba1331b1e.png)
+![ratin_gem](https://user-images.githubusercontent.com/11478711/89574165-1447b780-d802-11ea-950b-6246a6c4b9a3.png)
+
 
 ### - Segunda Parte: Visualização dos dados: **https://bit.ly/30y8HIe**
 
