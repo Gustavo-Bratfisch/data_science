@@ -17,10 +17,13 @@ plotando conseguimos notar que jogos MM são que tem o maior feedback tanto posi
 
 ![ratin_gem](https://user-images.githubusercontent.com/11478711/89564387-54ec0480-d7f3-11ea-8129-9afba1331b1e.png)
 
-### - Segunda Parte: Visualização dos dados: **https://bit.ly/3kh8mBH**
+### - Segunda Parte: Visualização dos dados: **https://bit.ly/30y8HIe**
+
 
 Nessa segunda parte criamos nosso modelo utilziando a metodologia de recomendação baseada em conteúdo onde passamos descrições dos jogos, o modelo computa TF-IDF (Term Frequency-Inverse Document Frequency) 
 que calcula uma matrix onde na coluna representa a uma avaliação da frequencia da palavra aparecer. Com essa matrix utilizamos uma metrica de similaridade (no nosso caso foi sigmoid_kernel) e por fim ordenamos pelo score feito anteriormente para ver os 10 jogos mais semelhantes. 
+
+
 ![final_app](https://user-images.githubusercontent.com/11478711/89566880-2ff99080-d7f7-11ea-928e-c60843044940.png)
 ## Deployment
 
