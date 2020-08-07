@@ -40,6 +40,6 @@ Caso o jogo não esteja dentro do nosso conjunto de dados da uma mensagem como n
 
 O próximo passo é implementar um Deploy em algum servidor para deixar publico nosso sistema de recomendação de jogos. Estou em duvida entre utilziar Heroku ou Apache.
 
-##Futuro
+## Futuro
 Meus proximos passos é fazer um programa dinamico. Se o jogo não esta contido dentro do nosso conjunto, pretendo fazer um web scrap do jogo dentro do site da Steam e pego
 os dados necessarios para fazer o calculo de semelhança e retorno a resposta, e no fim acrescento jogo no conjunto final de dados.
