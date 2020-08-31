@@ -23,6 +23,7 @@ Projetos feitos em Jupyter Notebook.
 * **Breve análise em cima do conjunto de dados Iris :** https://bit.ly/3eUY9qC
 * **Recomendação de Jogos na Steam com Flask :** https://bit.ly/2DCyNRE
 * **Modelo de Regressão para Vendas de Casa :** https://bit.ly/2EbheIV
+* **Data Engineering para coleta de dados em um livraria virtual: ** https://bit.ly/3gKEpHp
 ---
 
 
