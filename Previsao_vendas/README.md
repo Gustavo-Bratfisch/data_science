@@ -34,5 +34,8 @@ O feature enginering serve tanto para tratarmos o nosso dados, assim como a cria
   - Algoritmo Boruta
   - Inspeção visual
 ## Modelos
+Como estamos trabalhando com uma serie temporal multivariada é possivel utilizar modelos como Random Forest ou XGBoost, entretanto temos que modelos como VAR (Vector autoregressive model) ou modelos de aprendizado supervisionado tambem funcionam bem (usualmente series temporais univariado são modelados utilizado modelos de ARIMA - ARIMAX).
+
+Nesse projeto testamos esses dois modelos, depois de realizar teste com os parametros encotramos Random Forest que melhor se encaixou no nosso problema.
 
 ## Resultados
