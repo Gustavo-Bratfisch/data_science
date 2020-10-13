@@ -60,6 +60,16 @@ Porém quando vemos a disposição de todas as lojas conseguimos ver tirando ess
 
 ![Mape_shops](https://user-images.githubusercontent.com/11478711/95860122-fd5b9f00-0d35-11eb-8389-78784409f5b0.png)
 
-Além disso podemos ver pelo plot os valores reais e os valores preditos, notamos que no geral tivemos um modelo que aprendeu bem, até a sazionalidade foi bem prevista.
+Plotando os valores reais pelo previsto, temos que nosso modelo conseguiu aprender bem, até mesmo a sazionalidade que geralmente é um problema em series temporais.
 
-Porém conseguimos notar que para os ultimos três dias a taxa do erro cresceu absurdamente, precisando dar uma olhada oque pode estar ocacionando esse erro, antes de colocar o modelo em produção.
+![Predito_real](https://user-images.githubusercontent.com/11478711/95861349-ad7dd780-0d37-11eb-884a-0ac9fa3b8d6c.png)
+
+Por fim criamos a taxa do erro que não nada mais que dividir as nossas predições dividido pelos valores reais. Pelo grafico notamos que os nossos valores preditos estão sempre acima dos reais, o modelo está superestimando os valores mas com valores toleraveis. Entretanto no ultimos dois dias tempo uma alta taxa do erro que pode estar ocacionando por causa daqueles 5 shops que vimos anteriormente.
+
+![taxa_erro](https://user-images.githubusercontent.com/11478711/95861533-f3d33680-0d37-11eb-9906-3eb8797e5094.png)
+
+## Conclusão
+
+A construção do modelo foi bem sucedida, temos um modelo robusto que consegue prever a receita para as proximas 6 semanas, entretanto tem espaço para melhorar principalmente sabendo que algumas lojas não estão respondendo bem ao modelo. Conseguimos encontrar que o lucro total da empresa das ultimas semanas vai estar em torno de 94 milhôes, podendo realocar esses valor para fazer o investimento/reforma da maneira necessaria.
+
+No futuro podemos fazer implementar diferentes modelos para fazer a comparação dos modelos e também para colocar em produção podemos criar uma API junto com um chat-bot do Telegram que devolve as previsões diretamente para o celular.
