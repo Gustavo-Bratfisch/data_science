@@ -7,9 +7,13 @@
 As empresas quando estão pensando em fazer um investimento ou uma reforma de uma das lojas, necessitam saber quanto de receita vão receber dentro de um periodo do tempo para saber o quanto desse dinheiro pode ser utilizado. Com Modelos de Machine Learning para Séries Temporais para prever a receita tanto para a compania toda ou apenas para uma loja especifica. No conjunto de dados que trabalhamos tinhamos informação do dia da compra, a quantidade, o produto ( ID do produto), a categoria do produto, o ID da loja e em outro conjunto de dados temos o nome da loja e o endereço da loja (a lojas estão espalhados por toda Russia e tambem vendem online).
 
 ## Hipóteses de negócio
-- Lojas que vendem maior diversidades de produtos tem uma receita maior.
-- Lojas em Cidades Grandes na média não vendem mais que as demais.
+- Lojas que vendem maior diversidades de produtos tem uma receita maior. Depende, temos que lojas que vendem abaixo de 45 categorias elas tem uma receita baixa comparadas com as demais porém não mostra que lojas que vendem mais de 55 estão com a receita mais alta. 
 
+![Quantidade_per_receita](https://user-images.githubusercontent.com/11478711/95864715-2b43e200-0d3c-11eb-845d-942349f11e86.png)
+
+- Lojas em Cidades Grandes na média não vendem mais que as demais. Falsa, se olharmos apenas para a soma final tem sentido as lojas em cidades maiores ter valores superiores que se deve ao tamanho da loja, porém quando calculamos a média notamos que os valores proximas até abaixo das demais.
+
+![Per_city](https://user-images.githubusercontent.com/11478711/95865007-88d82e80-0d3c-11eb-8425-10272d6aa5ec.png)
 
 ## Feature engineering
 
