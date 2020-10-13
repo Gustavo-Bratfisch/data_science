@@ -40,11 +40,25 @@ Os dois modelos utilizados não preve valores no tempo t+1 por isso que foi feit
 
 ## Resultados
 Para fazer a avaliação do modelo vamos utilizar 3 diferentes métricas:
-- MAE
-- MAPE
-- RMSE
+- MAE: O valor absoluto da media da diferença entre o valor real e o valor predito
+- MAPE: É a porcentagem do valor absoluto da media da diferença entre o valor real e o valor predito
+- RMSE: É a raiz quadrada da media da diferença entre o valor real e o valor predito
 
-Podemos ver os shop que foram piores colocados em relação as metricas, é possivel ver uma grande diferença entre eles ...
+Para nosso modelo final chegamos ao resultado:
+
+![Resultado_final_modelo](https://user-images.githubusercontent.com/11478711/95860653-ba4dfb80-0d36-11eb-991d-7c0e2dc373c9.png)
+
+Com esse resultado foi possivel encontrar o pior e o melhor cenario possivel, seria o minimo e o maximo que o nosso negocio vai lucrar.
+
+![cenarios](https://user-images.githubusercontent.com/11478711/95860843-013bf100-0d37-11eb-89a1-1b7cdad8edbc.png)
+
+Podemos ver os shop que foram piores colocados em relação as metricas estão com os valores muito acima do que encontrados no geral, para esses cincos shops esse modelo não é util, teriamos que fazer uma analise nessas lojas para ver oque esta acontecendo (pode ser que tenha poucos dados para essas lojas)
+
+![image](https://user-images.githubusercontent.com/11478711/95859982-c9807980-0d35-11eb-8002-2a80fe76d235.png)
+
+Porém quando vemos a disposição de todas as lojas conseguimos ver tirando esses outliers, temos que o modelo conseguiu representar bem para o restante ficando com o MAPE em torno de 17%.
+
+![Mape_shops](https://user-images.githubusercontent.com/11478711/95860122-fd5b9f00-0d35-11eb-8389-78784409f5b0.png)
 
 Além disso podemos ver pelo plot os valores reais e os valores preditos, notamos que no geral tivemos um modelo que aprendeu bem, até a sazionalidade foi bem prevista.
 
