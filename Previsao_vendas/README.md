@@ -36,6 +36,16 @@ O feature enginering serve tanto para tratarmos o nosso dados, assim como a cria
 ## Modelos
 Como estamos trabalhando com uma serie temporal multivariada é possivel utilizar modelos como Random Forest ou XGBoost, entretanto temos que modelos como VAR (Vector autoregressive model) ou modelos de aprendizado supervisionado tambem funcionam bem (usualmente series temporais univariado são modelados utilizado modelos de ARIMA - ARIMAX).
 
-Nesse projeto testamos esses dois modelos, depois de realizar teste com os parametros encotramos Random Forest que melhor se encaixou no nosso problema.
+Os dois modelos utilizados não preve valores no tempo t+1 por isso que foi feito o Feature Engineering em relação ao tempo, para conseguir que nosso modelo aprenda precisamos que nossos dados sejam um serie historica. Além disso precisamos dividir corretamente, não podemos separar nossos dados aleatoriamente e sim cortando em um periodo.
 
 ## Resultados
+Para fazer a avaliação do modelo vamos utilizar 3 diferentes métricas:
+- MAE
+- MAPE
+- RMSE
+
+Podemos ver os shop que foram piores colocados em relação as metricas, é possivel ver uma grande diferença entre eles ...
+
+Além disso podemos ver pelo plot os valores reais e os valores preditos, notamos que no geral tivemos um modelo que aprendeu bem, até a sazionalidade foi bem prevista.
+
+Porém conseguimos notar que para os ultimos três dias a taxa do erro cresceu absurdamente, precisando dar uma olhada oque pode estar ocacionando esse erro, antes de colocar o modelo em produção.
