@@ -7,30 +7,31 @@ A few months after the pandemic/"lockdown" started in Indaiatuba, I got curious 
 
 ## Data
 
-Os dados do governo foram facieis de conseguir, esta disponibilizado no github (https://github.com/seade-R/dados-covid-sp/tree/master/data) com o formato de csv. Enquanto os dados da prefeitura foram obtidos atraves das notas divulgadas no https://www.indaiatuba.sp.gov.br/saude/vigilancia-em-saude/vigilancia-epidemiologica/novo-coronavirus/notas/, retirando dentro do texto, o número de obitos, número de infectados, leitos UTI e internados clinicos, idades, comorbidade e gênero. Dessa forma foi criado dois diferentes conjunto de dados, no primeiros temos a data do acontecimento, número de obitos, infectados tanto do governo quanto da prefeitura, no segundo conjunto de dados temos as caracteristicas das pessoas que vieran a óbito como idades, sexo, comorbidadade (levamos em consideração as doenças hipertensão, diabetes, doenças renais, doenças pulmonares, obesidade e problemas cardiacos.
+Government data was easy to obtain, it is available on github at https://github.com/seade-R/dados-covid-sp/tree/master/data. While city hall data was obtained from each note released ino https://www.indaiatuba.sp.gov.br/saude/vigilancia-em-saude/vigilancia-epidemiologica/novo-coronavirus/notas/, removing from the text, the number of deaths, number of infected, ICU beds and clinical inmates, ages, comorbidity and gender. Thus, two different data sets were created, in the first we have the date of the event, number of deaths, infected by both the government and the city, in the second data we have the characteristics of people who died, such as ages, sex, comorbidity (we take into account hypertension, diabetes, kidney disease, lung disease, obesity and heart problems.
 
-## Resultados
-Para as analises e visualizações de dados eu decidi utilizar o Tableau para testar as ferramentas. Todos os Graficos vão estar na minha pagina do Tableau public. A vantagem do Tableau é que interativo, voce pode clicar nas idades ou no genero que ele faz a filtragem dos dados dentros dos graficos feito.
+## Results
+For data analysis and visualization I decided to use Tableau to test the tools. All the graphics will be on my Tableau public page. The advantage of Tableau is that interactive, you can click on the ages or the genre that it does the filtering of the data within the graphics done.
 
-Vou dar uma visão geral dos resultados. Vemos que os óbitos ocorrem com pessoas acima de 30 anos e majoritariamente com pessoas acima de 60 anos. Sendo 60% homem e 92% tiveram alguma comorbidade podendo ter sido listado nesse projeto ou algo diferente. Além disso 40% das pessoas tinham hipertensão, apenas 20% com diabetes(https://tabsoft.co/2J2Hh7s).
+I will give an overview of the results. We see that deaths occur with people over 30 years old and mostly with people over 60 years old. Being 60% male and 92% had some comorbidity, they may have been listed in this project or something different. In addition 40% of people had hypertension, only 20% had diabetes(https://tabsoft.co/2J2Hh7s), with you click in these barplot you can see the distribution per age of the comorbity and the division by genre.
 
 ![Painel_Caract](https://user-images.githubusercontent.com/11478711/102696186-34a16d00-420b-11eb-983d-061de2ebd16e.png)
 
-Visualizando os crescimentos de infectados é evidente uma diferença nos casos de infectados após junho um diferença que chega na casa dos 2000 mil casos, essa diferença aumenta durante um bom tempo até chegar na fase verde do plano São Paulo onde os casos para o Governo de SP começaram a aumentar. Olhando para os casos diarios os dados da prefeitura se mantem dentro de um intervalo enquanto o do Governo tem uma alta variancia.
+Visualizing the growths of infected, a difference in cases of infected is evident after June, a difference that reaches around 2000 thousand cases, this difference increases for a long time until reaching the green phase of the São Paulo plan where the cases for the Government of SP started to increase. Looking at the daily cases, the data from the city hall remains within a range while the government data has a high variance.
 
 ![Conf1](https://user-images.githubusercontent.com/11478711/102696374-98786580-420c-11eb-9b0e-9a6c06af773a.png)
 
-Porém quando olhamos para os dados de Óbitos vemos o mesmo comportamento até o dia da mudança para fase verde, que acontece um pico de morte com 187, depois desse pico onde valores ficam na mesma.
+
+However, when we look at the data from number of deaths we see the same behavior until the day of the change to the green phase, which happens a death peak with 187, after that peak where values stay the same
 
 ![Obi2](https://user-images.githubusercontent.com/11478711/102696451-2e13f500-420d-11eb-843a-60030beaa720.png)
 
-Somandos os valores por mês do número de infectados/óbito, de Maio até Setembro os dados da prefeitura são superiores ao do Governos, após esses meses tem um acrescimos nos valores do governo. Principalmente para Outubro, onde o numero de casos do Governos é o maior de todos os meses dos dois conjuntos de dados.
+Adding the values per month of the number of infected / death, from May to September the data from the city hall are higher than those from the governments, after these months there is an increase in the government figures. Especially for October, where the number of Government cases is the highest of all months of the two data sets.
 
 ![Men_da](https://user-images.githubusercontent.com/11478711/102696725-002fb000-420f-11eb-936f-9e2faf85a905.png)
 
 
 ## Conclusion
 
-Podemos concluir que para os 5 meses iniciais da pandemia exestiu uma grande diferença para o número de infectados (na média 2 mil casos) e numero de obitos (cerca de 30 óbitos), depois desse tempo podemos notar valores altos para aproximar dos valores divulgados pela prefeitura de Indaiatuba. Acredito que até o fim de Dezembro esses dados estejam no mesmo valores.
+We can conclude that for the initial 5 months of the pandemic there was a big difference for the number of infected (on average 2 thousand cases) and the number of deaths (about 30 deaths), after these months we can see an increase of infected people in the government data trying to get the difference smaller. I believe that by the end of December these data will be even.
 
-Esse projeto foi feito para treinar as habilidades de web scraping e começar a utilizar Tableau para visualização de dados.
+This project was made to train web scraping skills and to learn and train Tableau .
