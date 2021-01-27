@@ -20,7 +20,7 @@ Formando em Matemática Aplicada pela Unicamp, trabalhei com modelagem matemáti
 Projetos feitos em Jupyter Notebook.
 * **Previsão de Vendas de uma Loja desenvolvedora e distribuidora de software utilizando Ranfom Forest:** https://bit.ly/3iVgwOb
 * **Comparação entre dados do Governo de São Paulo x Prefeitura de Indaiatuba utilizando Tableau:** https://bit.ly/38i6fIE
-* **Detecção de Fraudes em transações bancárias:** https://bit.ly/3fXkpBF
+* **Fraud Detection using ExtraTree:** https://bit.ly/3qWBJM3
 * **Recomendação de Jogos na Steam com Flask :** https://bit.ly/32w3xh3
 * **Modelo de Regressão para Vendas de Casa :** https://bit.ly/2EbheIV
 ---
