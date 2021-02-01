@@ -32,3 +32,39 @@ Looking to the Figure 2, we have the hour of the day of each non-fraud tansactio
 Figure 1                   | Figure 2
 :-------------------------:|:-------------------------:
 ![Hour_fraud](https://user-images.githubusercontent.com/11478711/106042641-18bba180-60bc-11eb-8a89-d339e06a4820.png) | ![Hour_nonfraud](https://user-images.githubusercontent.com/11478711/106042743-3ab52400-60bc-11eb-976d-699506dfda1a.png)
+
+
+### The payments are made between day 6 until 17 of the month
+
+The transaction are made between 6 until 17 due to the receipt of the salary.
+
+![day_trans](https://user-images.githubusercontent.com/11478711/106500412-8e4eb580-64a0-11eb-944c-f0ce654e9824.png)
+
+### The transfer represents the highest percentage of money transferred
+
+Transfer represents 71.5% of the gross money transferred in total and Debit the lowest amount
+
+![tabel](https://user-images.githubusercontent.com/11478711/106503978-1767eb80-64a5-11eb-8446-0920fe49b257.png)
+
+
+## Model
+
+Para esse projeto testamos 5 diferentes modelos, sendo 1 o baseline que foi IsolationForest (que não é um modelo para identifica anomalias dentro dos dados), além disso testamos Regressão Logistica, Random Forest, Extra Tree e uma KNN.
+
+Nosso conjunto de dados contém dados desbalanceados, isso quer dizer que temos muito mais de uma classe do que da outra, para o nosso problema estamos com um 99.91% de dados são transação não fraudulentas. Para contornar esse problema passamos para o modelo um vetor com o peso para cada classe, foi definido para a classe non fraud - 0.00091 e para fraud:0.999, dessa forma o modelo dará uma importancia para a classe minoritaria.
+
+Na Figura abaixo foi feito uma tabela com o resultado para os dados de treino, para as metricas de Accuracia, Recall, Precision, F1-Score e Kappa-Score, para todas as mettricas, menos Kappa-Score.
+
+![tab_metric](https://user-images.githubusercontent.com/11478711/106520051-f14d4600-64ba-11eb-833e-95bb57140c9d.png)
+
+Notamos que o modelo de Random Forest foi o com os melhors resultados em todas as metricas com 99.99% e com um kappa-score alto mostrando que errou em poucos casos (podemos ver na matrix de confusão Figura (A) que errou apenas 7 valores no total), não queremos utilizar o random forest pelos valores dado temos uma grande chance de acontecer um overfitting nos dados. 
+
+Vamos utilizar o segundo modelo com melhor resultados que foi o Extra Tree, com melhores resultados, porém vemos pela Figure B nao aprendeu tão bem a classe Fraud, the last step is to tune our model to find the best parameters, we used GridSearchcv (we combine all the parameters to find the best one).
+
+Figure A                   | Figure B
+:-------------------------:|:-------------------------:
+![Heatmap_rf](https://user-images.githubusercontent.com/11478711/106523974-b221f380-64c0-11eb-92eb-45e50beec6f4.png) | ![Heatmap_et](https://user-images.githubusercontent.com/11478711/106524070-cfef5880-64c0-11eb-80fa-c976e887f064.png)
+
+## Bussiness Results
+
+
