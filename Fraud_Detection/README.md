@@ -49,28 +49,63 @@ Transfer represents 71.5% of the gross money transferred in total and Debit the 
 
 ## Model
 
-Para esse projeto testamos 5 diferentes modelos, sendo 1 o baseline que foi IsolationForest (que não é um modelo para identifica anomalias dentro dos dados), além disso testamos Regressão Logistica, Random Forest, Extra Tree e uma KNN.
+For this project we tested 5 different models, the first test was our baseline which was IsolationForest (which is  model for identifying anomalies within the data), in addition we tested Logistic Regression, Random Forest, Extra Tree and a KNN.
 
-Nosso conjunto de dados contém dados desbalanceados, isso quer dizer que temos muito mais de uma classe do que da outra, para o nosso problema estamos com um 99.91% de dados são transação não fraudulentas. Para contornar esse problema passamos para o modelo um vetor com o peso para cada classe, foi definido para a classe non fraud - 0.00091 e para fraud:0.999, dessa forma o modelo dará uma importancia para a classe minoritaria.
 
-Na Figura abaixo foi feito uma tabela com o resultado para os dados de treino, para as metricas de Accuracia, Recall, Precision, F1-Score e Kappa-Score, para todas as mettricas, menos Kappa-Score.
+Our data set contains unbalanced data, this means that we have much more than one class than the other, for our problem we have a 99.91% of data are non-fraudulent transactions. In order to get around this problem, we passed to the model a vector with the weight for each class, it was defined for the non fraud class - 0.00091 and for fraud: 0.999, so the model will give an importance to the minority class.
+
+In the Figure below, a table was made with the result for the training data, for the accuracy metrics, Recall, Precision, F1-Score and Kappa-Score, for all metrics, except Kappa-Score.
 
 ![tab_metric](https://user-images.githubusercontent.com/11478711/106520051-f14d4600-64ba-11eb-833e-95bb57140c9d.png)
 
-Notamos que o modelo de Random Forest foi o com os melhors resultados em todas as metricas com 99.99% e com um kappa-score alto mostrando que errou em poucos casos (podemos ver na matrix de confusão Figura (A) que errou apenas 7 valores no total), não queremos utilizar o random forest pelos valores dado temos uma grande chance de acontecer um overfitting nos dados. 
+We noticed that the Random Forest model was the one with the best results in all metrics with 99.99% and with a high kappa-score showing that it was wrong in a few cases (we can see in the confusion matrix Figure (A) that it was only 7 values ​​in the total), we don't want to use the random forest for the given values, we have a great chance of overfitting the data.
 
-Vamos utilizar o segundo modelo com melhor resultados que foi o Extra Tree, com melhores resultados, porém vemos pela Figure B nao aprendeu tão bem a classe Fraud, the last step is to tune our model to find the best parameters, we used GridSearchcv (we combine all the parameters to find the best one).
+We will use the second model with the best results, Extra Tree, with the best results, but we can see by Figure B that the Fraud class did not learn so well, the last step is to tune our model to find the best parameters, we used GridSearchcv (we combine all the parameters to find the best one).
+
 
 Figure A                   | Figure B
 :-------------------------:|:-------------------------:
 ![Heatmap_rf](https://user-images.githubusercontent.com/11478711/106523974-b221f380-64c0-11eb-92eb-45e50beec6f4.png) | ![Heatmap_et](https://user-images.githubusercontent.com/11478711/106524070-cfef5880-64c0-11eb-80fa-c976e887f064.png)
 
 ## Bussiness Results
+The main questions it was to create a tool to help to minimize the number of fraud transaction, to answer this question we deployed the model together with the data pipeline (cleaning, create features and transformation) in Heroku, to use you have to pass a json and will receive the result back.
 
+Using the model for our test data set, the confusion matrix and the metrics used before was:
 ![buss_cm](https://user-images.githubusercontent.com/11478711/106536964-2916b680-64d8-11eb-97a2-0e4ccbd04fbc.png)
 
-
 ![metric_bus](https://user-images.githubusercontent.com/11478711/106537040-4ea3c000-64d8-11eb-8ddd-2ef6bbea7bbe.png)
+Now we can start answer a few question, like:
+- What is the Recall and Precision (Accuracy) of the model?
 
+Acuraccy: 0.961622
+
+Recall: 0.961622
+
+Precision: 0.99872
+
+F1-Score: 0.979236
+
+- What is the reliability of the model in classification as fraud or not?
+
+My model is predicting 96% right non-fraud and 96.8% fraud.
+
+
+Now answering the questions related to how much the company will receive we have:
 ![tab_buss](https://user-images.githubusercontent.com/11478711/106536490-56af3000-64d7-11eb-951d-5a6bac9462a8.png)
 
+- What is the revenue of the company if we classify all the transaction in the data?
+
+The revenue of the Blocker Fraud will be R$ 1.35 bilions
+
+- What is the Loss expected if the model fails?
+
+The loss expected is the R$ 3.8 milions
+
+- What is the profit expected to Blocker fraud ?
+
+The profit of the Blocker Fraud will be R$ 1.21 bilions
+
+## Leassons Learned and Next steps.
+The lessons learned during this project were that when we work with unbalanced data we need to be more careful because if not treated correctly (in our case, passing a weight vector to our models) we will have a problem in identifying this class. In addition, for the first time I tested QuantileTransformer for numerical variables for the transformation and I liked the results, mapping the data between a uniform Gaussian distribution, helping the model to learn better.
+
+For the next steps I'll try differents transformations to the categorical variables ( it was used label enconder) and to numerical variables trying the combinations. I want to test creating a synthetic variable for the minority class (Fraud), even though I know that fraud in bank data is not a nature with a lot of data. I am also interested in leaving only the two types of payments that are generating fraud and in the others to withdraw from the data set to see the behavior.
