@@ -4,7 +4,7 @@
 
 In this project we seek to help the Blocker Fraud enterprise to detect the fraud transactions.
 
-A empresa vai receber: The company will receive: 25% of the value of each transaction truly detected as fraud. 5% of the value of each transaction detected as fraud, but the transaction is truly legitimate.
+The company will receive: 25% of the value of each transaction truly detected as fraud. 5% of the value of each transaction detected as fraud, but the transaction is truly legitimate.
 
 However it returns 100% of the value to the customer, for each transaction detected as legitimate, however the transaction is truly a fraud.
 
