@@ -1,27 +1,63 @@
-# Prediction Bank Churn
+# Churn Bank
 
-## Problem
+## This projects aims decrease the number of clients that leaves the company (churn) and show the financial return of these clients
 
-TopBank is a large banking services company. It operates mainly in European countries offering financial products, from bank accounts to investments, passing through some types of insurance and investment product.
+#### This project was made by Gustavo Bratfisch.
 
-The main product of the company is a bank account, which the client can deposit his salary, withdrawals, deposits and transfer to other accounts. The bank account has no cost to the client and it's valid for 12 month, after these 12 month the client has to renew the account for another 12 months.
+# 1. Business Problem.
 
-According to analytics team of TopBank, each client that has an account return a monetery amount of 15% of their estimated salary if it is below of the average salary of all clients and 20% if this salary is above the average. The average and the porcetage of return if calculated annualy.
+# 2. Business Assumptions.
 
-In the last few month, the Analytics team realized that the rate of customers cancelling their bank account reached unprecedented numbers in the company. Concerned about this high rate, the company contract me as a Data Sciencts to create a plan to reduce the churn rate (rate of customers cancelling their accounts) and show a financial return to the bank. 
+# 3. Solution Strategy
 
-At the end of the work, we will delivery a machine learning model in production that return in order all the probability of each client to churn and a report answer these three question:
+My strategy to solve this challenge was:
 
-**1. What is the current churn rate of TopBank? How it varies monthly?**
+**Step 01. Data Description:**
 
-**2. What is the model performance to classify clients as churn?**
+**Step 02. Feature Engineering:**
 
-**3. What is the expected return, in terms of revenue, if the company uses its model to avoid customer churn?**
+**Step 03. Data Filtering:**
 
+**Step 04. Exploratory Data Analysis:**
 
-## Model
+**Step 05. Data Preparation:**
 
-## Results
+**Step 06. Feature Selection:**
 
-## Next steps
+**Step 07. Machine Learning Modelling:**
 
+**Step 08. Hyperparameter Fine Tunning:**
+
+**Step 09. Convert Model Performance to Business Values:**
+
+**Step 10. Deploy Modelo to Production:**
+
+# 4. Top 3 Data Insights
+
+**Hypothesis 01:**
+
+**True/False.**
+
+**Hypothesis 02:**
+
+**True/False.**
+
+**Hypothesis 03:**
+
+**True/False.**
+
+# 5. Machine Learning Model Applied
+
+# 6. Machine Learning Modelo Performance
+
+# 7. Business Results
+
+# 8. Conclusions
+
+# 9. Lessons Learned
+
+# 10. Next Steps to Improve
+
+# LICENSE
+
+# All Rights Reserved - Comunidade DS 2022
