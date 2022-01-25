@@ -49,25 +49,26 @@ A possible action for retain these clients, is to offer a discount cupom or a ta
 
 My strategy to solve this challenge was:
 
-**Step 01. Data Description:**
+**Step 01. Data Description:** We first analyse data: to see data type, see if have some inconsistency and missing value. And in the end make the descriptive statistics.
 
-**Step 02. Feature Engineering:**
+**Step 02. Feature Engineering:** Create new features based on the coluns, to create a new informations. In the part we also create a some hypothesis about the business, to gain import informations. 
 
-**Step 03. Data Filtering:**
+**Step 03. Data Filtering:** We filter the data of some incosistency.
 
-**Step 04. Exploratory Data Analysis:**
+**Step 04. Exploratory Data Analysis:** In this part, we divide in three parts: 
+1. First we do a univariate analysis
+2. Second we do a bivariate analysis, trying to respond the hypothesis we create in the step 2
+3. Third we made a multivariate analysis doing a data correlation 
 
-**Step 05. Data Preparation:**
+**Step 05. Data Preparation:** Data Preparation for best fit in machine learning, doing some scaler to keep inside a good range.
 
-**Step 06. Feature Selection:**
+**Step 06. Feature Selection:** Select the best features for the model (using Boruta and Random Forest for it).
 
-**Step 07. Machine Learning Modelling:**
+**Step 07. Machine Learning Modelling:** Test differents models and see what give best metrics (Logistic Regression, Random Forest, KNN, XGBoost and ExtraTree)
 
-**Step 08. Hyperparameter Fine Tunning:**
+**Step 08. Hyperparameter Fine Tunning:** After get the best model, we tunning the parameters to give an best metrics
 
-**Step 09. Convert Model Performance to Business Values:**
-
-**Step 10. Deploy Modelo to Production:**
+**Step 09. Convert Model Performance to Business Values:** In this part, we give back the financial return and the clients who will receive cupom discount.
 
 # 4. Top 3 Data Insights
 
