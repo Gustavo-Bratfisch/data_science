@@ -64,7 +64,7 @@ My strategy to solve this challenge was:
 
 **Step 06. Feature Selection:** Select the best features for the model (using Boruta and Random Forest for it).
 
-**Step 07. Machine Learning Modelling:** Test differents models and see what give best metrics (Logistic Regression, Random Forest, KNN, XGBoost and ExtraTree)
+**Step 07. Machine Learning Modelling:** Test differents models, to find those have the best metrics.
 
 **Step 08. Hyperparameter Fine Tunning:** After get the best model, we tunning the parameters to give an best metrics
 
@@ -72,19 +72,32 @@ My strategy to solve this challenge was:
 
 # 4. Top 3 Data Insights
 
-**Hypothesis 01:**
+**Hypothesis 01: Person with age above 50 year has more chance of Chrun**
 
-**True/False.**
+**True.** - We see the group have more chance to churn is above 50 years, and running a hypothesis test to group above 50 and below 50 years old has a different distribuition between than.
 
-**Hypothesis 02:**
+![hyphotesis1](https://user-images.githubusercontent.com/11478711/151144231-05273523-d669-4969-9163-05e896177411.png)
 
-**True/False.**
+**Hypothesis 02: The Highest time as client in the bank the lower is the credit score**
 
-**Hypothesis 03:**
+**False.** We can see the line in the middle show they have the same median.
 
-**True/False.**
+![hyphotesis2](https://user-images.githubusercontent.com/11478711/151145001-34e45bf2-c609-4701-8296-80008900a0c1.png)
+
+**Hypothesis 03: Client with more tenure has last chance to churn**
+
+**False.** There is no difference between churn and not churn in the distribuition.
+
+![hyphotesis3](https://user-images.githubusercontent.com/11478711/151145121-b18800e7-a027-4544-88df-4c7dbace6a83.png)
 
 # 5. Machine Learning Model Applied
+At the first CRISP cycle for this project, the following models was tested:
+
+1. Logistic Regression
+2.  Random Forest
+3.   KNN,
+4.   XGBoost 
+5.   ExtraTree
 
 # 6. Machine Learning Modelo Performance
 
