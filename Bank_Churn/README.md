@@ -95,11 +95,13 @@ At the first CRISP cycle for this project, the following models was tested:
 
 1. Logistic Regression
 2.  Random Forest
-3.   KNN,
+3.   KNN
 4.   XGBoost 
 5.   ExtraTree
 
 # 6. Machine Learning Modelo Performance
+
+![image](https://user-images.githubusercontent.com/11478711/151150943-5b29175a-f4e8-40b2-ae8d-4505a979381e.png)
 
 # 7. Business Results
 
