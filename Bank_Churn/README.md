@@ -64,11 +64,11 @@ My strategy to solve this challenge was:
 
 **Step 06. Feature Selection:** Select the best features for the model (using Boruta and Random Forest for it).
 
-**Step 07. Machine Learning Modelling:** Test differents models, to find those have the best metrics.
+**Step 07. Machine Learning Modelling:** Test differents models, to find those have the best metrics (in this case Recall to have less false negative). For this problem we are going to use the probability for the client be in churn.
 
 **Step 08. Hyperparameter Fine Tunning:** After get the best model, we tunning the parameters to give an best metrics
 
-**Step 09. Convert Model Performance to Business Values:** In this part, we give back the financial return and the clients who will receive cupom discount.
+**Step 09. Convert Model Performance to Business Values:** In this part, we give back the financial return and the clients who will receive cupom discount. We are going to order for the higher probability to churn and give a cupom of discount.
 
 # 4. Top 3 Data Insights
 
@@ -99,17 +99,45 @@ At the first CRISP cycle for this project, the following models was tested:
 4.   XGBoost 
 5.   ExtraTree
 
-# 6. Machine Learning Modelo Performance
+The metrics for each model, in this project we are focusing in do a recall metric better to have less false negative.
 
 ![image](https://user-images.githubusercontent.com/11478711/151150943-5b29175a-f4e8-40b2-ae8d-4505a979381e.png)
 
+# 6. Machine Learning Modelo Performance
+
+The model chosen was XGBoost, 
+
+![image](https://user-images.githubusercontent.com/11478711/151341856-c0275602-0a97-4bcb-91eb-811cee1c6e96.png)
+
+ALso we plotted the cumulative gain curve that shows us where all the positive cases are in the porcentage of all population (example 20% of our churn people represent 60% of all cases) and the Lift curve that show how our model is better in choose client that will be in churn than a random choice.
+
 # 7. Business Results
+
+Respond to CEO question:
+**1. What is the current churn rate of TopBank? How it varies monthly?**
+The churn Rate of the company is 20.37% and monthly is 7.07%.
+
+**2. What is the model performance to classify clients as churn?**
+The model is correct classifying clients as churn in 68%
+
+**3. What is the expected return, in terms of revenue, if the company uses its model to avoid customer churn?**
+
+Using the model to predict all the churn corretly, we will have a return of R$6 milion, but the problem here that to have back these clients we are going to give discount cupom and we only have R$10.000, for this we are going to choose the clients with higher Revenue for the company. 
+
+In this scenarios, we will give cupons of R$100,00 for the  100 clients with high probability churn, in this way the return will be of R$2328180,00 +/- 4545,00, where we predict right 85% clients that churn in did.
+
+Here we tested differents values of cupons.
 
 # 8. Conclusions
 
 # 9. Lessons Learned
 
 # 10. Next Steps to Improve
+
+- Create new features to help to improve the model.
+- Investigate some salary that is below R$100,00
+- Create a rule, what client will the company already lost and the company has the chance to continue
+- Improve a KnapSack to optimization problem to give discount cupom for clients in churn. 
 
 # LICENSE
 
