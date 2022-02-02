@@ -124,14 +124,17 @@ The model is correct classifying clients as churn in 68%
 
 Using the model to predict all the churn corretly, we will have a return of R$6 milion, but the problem here that to have back these clients we are going to give discount cupom and we only have R$10.000, for this we are going to choose the clients with higher Revenue for the company. 
 
-In this scenarios, we will give cupons of R$100,00 for the  100 clients with high probability churn, in this way the return will be of R$2328180,00 +/- 4545,00, where we predict right 85% clients that churn in did.
-
-Here we tested differents values of cupons.
+In this scenarios, we will give cupons (here we tested differents values of cupons) of R$100,00 for the  100 clients with high probability churn, in this way the return will be of R$2328180,00 +/- 4545,00, where we predict right 85% clients that churn in did.
 
 # 8. Conclusions
 
+In this project we created a classification model of clients that will be in churn, our model it was 5 times better than a random choice of client that has chance to be in churn. With this model in production and together with the marketing strategy the company has a return of 2 millions reais of those client that not leave the company.
+
 # 9. Lessons Learned
 
+- In this project I learned how to use use the cumulative and lift curve to analysis how well our model is.
+- In this project I tested differents way to handle imbalanced data (in this case I used smote for oversampling) to see the efect for the models.
+- 
 # 10. Next Steps to Improve
 
 - Create new features to help to improve the model.
